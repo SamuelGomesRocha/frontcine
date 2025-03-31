@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+Projeto Final de Introdução à Programação
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aluno:Samuel Gomes Rocha
 
-Currently, two official plugins are available:
+Nome do Projeto:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sistema de Bilheteria da Sétima Arte: CineCult
 
-## Expanding the ESLint configuration
+Objetivo:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+O projeto tem como objetivo desenvolver um sistema de bilheteria para cinemas, permitindo o cadastro de filmes, a gestão de programações e a venda de ingressos. A aplicação segue um modelo orientado a objetos e busca oferecer uma solução eficiente para o gerenciamento de sessões de cinema.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Público-Alvo:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Administradores e funcionários de cinemas, que podem gerenciar filmes e sessões.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Amantes da Sétima Arte, que podem adquirir ingressos de forma simplificada.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Descrição do Banco de Dados:
+
+O sistema conta com um banco de dados estruturado em três principais entidades:
+
+Filme: Contém informações como título, gênero, direção e duração.
+
+Programação: Relaciona-se com um filme e define horários e salas de exibição.
+
+Ingresso: Associado a um filme e programação, gerenciando a venda e a disponibilidade de assentos.
+
+Os relacionamentos seguem a seguinte lógica:
+
+Um Filme pode ter várias Programações.
+
+Um Ingresso está vinculado a uma Programação, e sua compra reduz a quantidade de assentos disponíveis.
+
+Link para Código-Fonte:
+
+A aplicação foi desenvolvida utilizando arquitetura separada entre frontend e backend, e está disponível nos seguintes repositórios:
+
+Backend: GitHub - CineCult Backend
+
+Frontend: GitHub - CineCult Frontend
