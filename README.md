@@ -1,41 +1,63 @@
-Projeto Final de Introdução à Programação
+🎬 Sistema de Bilheteria da Sétima Arte: CineCult
 
-Aluno:Samuel Gomes Rocha
+ (Se houver um logo, insira aqui)
 
-Nome do Projeto:
+📌 Sobre o Projeto
 
-Sistema de Bilheteria da Sétima Arte: CineCult
+O CineCult é um sistema de bilheteria para cinemas que permite:
 
-Objetivo:
+Cadastro de filmes.
 
-O projeto tem como objetivo desenvolver um sistema de bilheteria para cinemas, permitindo o cadastro de filmes, a gestão de programações e a venda de ingressos. A aplicação segue um modelo orientado a objetos e busca oferecer uma solução eficiente para o gerenciamento de sessões de cinema.
+Gestão de programações.
 
-Público-Alvo:
+Venda de ingressos de forma eficiente e simplificada.
 
-Administradores e funcionários de cinemas, que podem gerenciar filmes e sessões.
+O projeto segue um modelo orientado a objetos e foi desenvolvido para aprimorar a experiência de gerenciamento de cinemas e compra de ingressos.
 
-Amantes da Sétima Arte, que podem adquirir ingressos de forma simplificada.
+🎯 Objetivo
 
-Descrição do Banco de Dados:
+Criar um sistema de bilheteria funcional e de fácil uso, proporcionando uma experiência otimizada para administradores de cinemas e amantes do cinema.
 
-O sistema conta com um banco de dados estruturado em três principais entidades:
+👥 Público-Alvo
 
-Filme: Contém informações como título, gênero, direção e duração.
+Administradores e funcionários de cinemas para gerenciar filmes e programações.
 
-Programação: Relaciona-se com um filme e define horários e salas de exibição.
+Espectadores que desejam comprar ingressos de forma prática.
 
-Ingresso: Associado a um filme e programação, gerenciando a venda e a disponibilidade de assentos.
+🗃️ Estrutura do Banco de Dados
 
-Os relacionamentos seguem a seguinte lógica:
+O banco de dados possui três entidades principais:
+
+Entidade
+
+Descrição
+
+🎥 Filme
+
+Contém informações como título, gênero, direção e duração.
+
+🗓️ Programação
+
+Define horários e salas de exibição associadas a um filme.
+
+🎟️ Ingresso
+
+Gerencia a compra e disponibilidade de assentos.
+
+🔗 Relacionamentos
 
 Um Filme pode ter várias Programações.
 
 Um Ingresso está vinculado a uma Programação, e sua compra reduz a quantidade de assentos disponíveis.
 
-Link para Código-Fonte:
+🚀 Tecnologias Utilizadas
 
-A aplicação foi desenvolvida utilizando arquitetura separada entre frontend e backend, e está disponível nos seguintes repositórios:
+Backend: Python (Django/FastAPI/Flask, etc.)
 
-Backend: GitHub - CineCult Backend
+Frontend: React.js / Vue.js / Angular (ou outra tecnologia utilizada)
 
-Frontend: GitHub - CineCult Frontend
+Banco de Dados: PostgreSQL / MySQL / MongoDB
+
+🔗 Repositórios
+
+📂 Backend: GitHub - CineCult Backend🎨 Frontend: GitHub - CineCult Frontend
