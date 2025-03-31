@@ -1,0 +1,212 @@
+body, html{
+  background-color: rgb(246, 234, 226);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+h1{
+  color: rgb(246, 234, 226);
+  font-size: 80px;
+}
+
+.navegador-menu{
+  padding-left: 10%;
+}
+
+h2{
+  cursor: pointer;
+}
+
+.navbar-title {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: rgb(115, 45, 45);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 0px;
+}
+.navbar a {
+  color:rgb(246, 234, 226);
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  background-color: gray;
+  border-radius: 5px;
+}
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  
+}
+
+.container button {
+
+  background-color: #0275d8;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  bottom: 16px;
+  right: 24px;
+  transition: all 0.1s linear 0.1s;
+}
+
+.container button:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
+  transform: scale(1.1);
+}
+
+.navegador {
+  background-color: rgb(246, 234, 226);
+  padding: 0;
+  display: flex;
+  justify-content: initial;
+  flex-direction: column; /* Organiza o layout de forma vertical */
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.menus {
+  width: 100%; /* Ocupa toda a largura disponível */
+  background-color:rgb(246, 234, 226);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+  margin-right: -10vw;
+  margin-left: -5vw;
+}
+
+.navegador-menu {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navegador-menu:hover {
+  color: #f4a261;
+}
+
+.nav-estatico {
+  background-color: rgb(115, 45, 45);;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /* Organiza o layout de forma vertical */
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: rgb(246, 234, 226);
+}
+
+.nav-estatico-titulo{
+  margin-top: 1%;
+  margin-left: 30%;
+}
+
+.carousel-container {
+
+ /* animation: scrollCarousel 16s linear infinite; /* Animação para rolar o carrossel */
+}
+
+@keyframes scrollCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-100%); /* Faz a rolagem do carrossel para a 2ª imagem */
+  }
+  50% {
+      transform: translateX(-200%); /* Faz a rolagem para a 3ª imagem */
+  }
+  75% {
+      transform: translateX(-300%); /* Faz a rolagem para a 4ª imagem */
+  }
+  100% {
+      transform: translateX(-400%); /* Faz a rolagem até a última imagem e continua indefinidamente */
+  }
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel img {
+  width: 30vw; /* A largura das imagens é a largura total da janela */
+  height: 100%; /* As imagens vão ocupar a altura do .navegador */
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.carousel img:hover {
+  transform: scale(1.01); /* Aumenta a imagem no hover */
+}
+
+.rodape0-informativo {
+  background-color: rgb(115, 45, 45);;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /* Organiza o layout de forma vertical */
+  width: 100%;
+  height: 0.5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  margin-top: 3%;
+  margin-bottom: 0;
+  overflow: hidden;
+  color: rgb(246, 234, 226);
+}
+
+.rodape0-informativo-menu {
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(115, 45, 45);;
+  margin-bottom: -1.3%;
+  margin-left: 30%;
+}
+
+.rodape1-informativo {
+  background-color: rgb(115, 45, 45);;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /* Organiza o layout de forma vertical */
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  margin-top: 1%;
+  margin-bottom: 0;
+  overflow: hidden;
+  color: rgb(246, 234, 226);
+}

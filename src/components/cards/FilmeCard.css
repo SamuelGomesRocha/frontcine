@@ -1,0 +1,63 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 30px 29px 0px;
+    padding: 0;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.01); 
+    background-color: rgb(255, 236, 223);
+    box-shadow: rgb(187, 84, 84) 0px 5px 5px 7px;
+}
+
+.card img{
+    border-radius: 8px 8px 0 0;
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.card img:hover {
+    transform: scale(1.02);
+}
+
+/* Textos normal e no hover */
+.card .text-default,
+.card .text-hover,
+.card .text-default1{
+    font-size: 16px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card .text-hover {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    font-size: 100px;
+    transform: translateX(-50%);
+    opacity: 0;
+    color: rgb(255, 255, 255); /* Cor diferente para destaque */
+}
+
+.card:hover .text-default{
+    opacity: 0; /* Esconde o texto original */
+}
+
+
+.card:hover .text-default1{
+    opacity: 0; /* Esconde o texto original */
+}
+
+.card:hover .text-hover {
+    opacity: 0.4; /* Mostra o novo texto */
+}
